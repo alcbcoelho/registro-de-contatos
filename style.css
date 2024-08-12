@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #e8e8e8;
+  font-family: "Inter", sans-serif;
+  color: #303030;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  min-height: calc(100vh - 45px);
+  width: 960px;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.025);
+}
+
+section {
+  margin-top: 1em;
+}
+
+header h1 {
+  text-align: center;
+}
+
+#contact-form {
+  width: 70%;
+  margin: 1em auto;
+  border: 1px #bcbcbc dotted;
+  border-radius: 4px;
+  padding: 0.75em;
+  text-align: center;
+}
+
+#contact-form .form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+#contact-form .form-container:last-of-type {
+  gap: 1em;
+}
+
+#contact-form .form-field:last-of-type {
+  padding-bottom: 0;
+}
+
+#contact-form label {
+  font-weight: bold;
+  margin-right: 0.25em;
+}
+
+#contact-form button,
+#contact-form input {
+  font-size: 1em;
+}
+
+#contact-form input {
+  padding: 0.25em;
+  margin-right: 0.5em;
+}
+
+#contact-form input:last-of-type {
+  margin-right: 0;
+}
+
+#contact-form button {
+  display: block;
+  margin: 1em 0 0 0;
+  padding: 0.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  transition: background-color 0.25s;
+}
+
+#button-add-contact {
+  color: #00a000;
+  border-color: #00a000;
+}
+
+#button-clear {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+#button-add-contact:hover {
+  color: #fff;
+  background-color: #00a000;
+}
+
+#button-clear:hover {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+#contact-list table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#contact-list th,
+#contact-list td {
+  padding: 0.75em;
+}
+
+#contact-list th {
+  border-bottom: 2px #303030 solid;
+}
+
+#contact-list td {
+  border-bottom: 1px #bcbcbc dotted;
+}
+
+#contact-list tr:last-of-type td {
+  border-bottom: none;
+}
+
+footer {
+  width: 100%;
+  background-color: #303030;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.125);
+}

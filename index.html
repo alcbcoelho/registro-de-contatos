@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Contatos</h1>
+        </header>
+        <section id="contact-form">
+            <form>
+                <div class="form-container">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" required id="name" placeholder="e.g. Joaquim Silva">
+                    </div>
+                    <div>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" required id="phone" placeholder="e.g. +55 22 2222-2222"
+                            pattern="^\+?\d{2}\s?\(?\d{2}\)?\s?\d{4,5}-?\d{4}$">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <button type="submit" id="button-add-contact">Adicionar contato</button>
+                    <button type="button" id="button-clear">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section id="contact-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <h6>
+            © 2024 André Coêlho
+        </h6>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
